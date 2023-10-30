@@ -1,17 +1,17 @@
 # AI Research Agents using Autogen Framework
 
-![Python Version](https://img.shields.io/badge/Python-3.9-blue?logo=python)
+![Python Version](https://img.shields.io/badge/Python-3.11.4-blue?logo=python)
 ![Framework](https://img.shields.io/badge/Framework-Autogen-brightgreen)
 ![AI Research](https://img.shields.io/badge/Domain-AI%20Research-orange)
 ![License](https://img.shields.io/badge/License-MIT-purple)
 
-The **AI Research Agents** project leverages the Autogen framework to develop and deploy autonomous agents for conducting cutting-edge AI research. The project is built using Python and is designed to provide a robust infrastructure for exploring, developing, and testing AI algorithms.
+This project serves as a **Proof of Concept** for developing and deploying autonomous AI research agents using the Autogen framework. These agents are designed to collaboratively work together to complete tasks sent by a user, providing a robust infrastructure for exploring, developing, and testing AI algorithms in a real-world scenario.
 
 ## Key Features
-- **Autonomous Agents**: Design and implementation of autonomous agents capable of conducting research autonomously.
-- **Flexible Framework**: Utilizes the Autogen framework to provide a modular and scalable infrastructure.
-- **AI Algorithm Testing**: Enables rigorous testing and evaluation of AI algorithms.
-- **Collaborative Research**: Supports collaborative research initiatives with easy integration and data sharing.
+- **User-directed Tasks**: Accepts commands from users and processes them to achieve the desired outcomes.
+- **Collaborative Agents**: Autonomous agents work together to efficiently complete user-directed tasks.
+- **Flexible Framework**: Utilizes the Autogen framework for a modular and scalable infrastructure.
+- **Real-world Testing**: Provides a realistic environment for testing and evaluating AI algorithms.
 
 ## Project Structure
 The project is organized as follows:
@@ -21,14 +21,13 @@ The project is organized as follows:
 
 ## Functions
 1. `create_agent()`: Creates a new research agent.
-2. `run_experiment()`: Executes an experiment using the specified agent and parameters.
-3. `evaluate_agent()`: Evaluates the performance of an agent.
-4. `share_results()`: Shares the results of experiments with the community.
-5. `load_dataset()`: Loads a dataset for use in experiments.
-6. `train_model()`: Trains a machine learning model using the provided dataset and parameters.
+2. `process_command()`: Processes a user command and delegates tasks to agents.
+3. `collaborate()`: Facilitates collaboration among agents to complete tasks.
+4. `evaluate_performance()`: Evaluates the performance of agents and the system as a whole.
+5. `report_results()`: Generates and shares reports on task completion and performance.
 
 ## Usage
-To get started with the AI Research Agents project:
+To get started with this Proof of Concept:
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Install the required dependencies using `conda install --file requirements.txt`.
@@ -47,7 +46,11 @@ python -m unittest discover tests -p '*_test.py' -v
 ## Contribution
 We welcome contributions from the community. Feel free to open issues, propose changes, and submit Pull Requests. For major changes, please open an issue first to discuss the proposed change.
 
+### To do
+- Add initial agent logic
+- Add requirements doc
+- Add test where necessary
+
 ---
 
 Designed with ❤️ by [@motypes](https://twitter.com/motypes). Join our [community](https://twitter.com/motypes) for updates and discussions.
-
