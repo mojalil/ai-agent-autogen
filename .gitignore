@@ -3,3 +3,9 @@
 # Environment files
 .env
 
+# cache folder
+__pycache__/
+.cache/
+
+# vscode
+.vscode/
