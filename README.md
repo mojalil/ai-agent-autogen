@@ -1,6 +1,6 @@
 # AI Research Agents using Autogen Framework
 
-![Python Version](https://img.shields.io/badge/Python-3.9-blue?logo=python)
+![Python Version](https://img.shields.io/badge/Python-3.11.4-blue?logo=python)
 ![Framework](https://img.shields.io/badge/Framework-Autogen-brightgreen)
 ![AI Research](https://img.shields.io/badge/Domain-AI%20Research-orange)
 ![License](https://img.shields.io/badge/License-MIT-purple)
