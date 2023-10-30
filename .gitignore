@@ -5,7 +5,7 @@
 
 # cache folder
 __pycache__/
-.cache/
+.cache
 
 # vscode
-.vscode/
+.vscode

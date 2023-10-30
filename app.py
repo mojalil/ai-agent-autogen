@@ -7,25 +7,24 @@ import autogen
 from dotenv import load_dotenv
 
 load_dotenv()
+API_KEY = os.getenv("OPENAI_API_KEY")
 
 print("Loading Autogen AI agent...")
-print("Loading OpenAI API key...", os.environ["OPENAI_API_KEY"][:5] + "..." + os.environ["OPENAI_API_KEY"][-5:])
+print("Loading OpenAI API key...", API_KEY[:5] + "..." + API_KEY[-5:])
 
 config_list = [
     {
-        'model': "gpt-3.5-turbo-16k",
-        'api_key': os.environ["OPENAI_API_KEY"],
+        "model": "gpt-3.5-turbo-16k",
+        "api_key": API_KEY,
     }
 ]
 
-llm_config = [
-    {
-        "request_timeout": 600,
-        "seed": 42,
-        "config_list": config_list,
-        "temperature": 0.9,
-    }
-]
+llm_config = {
+    "request_timeout": 600,
+    "seed": 42,
+    "config_list": config_list,
+    "temperature": 0,
+}
 
 assistant = autogen.AssistantAgent(
     name="assistant",
@@ -44,11 +43,8 @@ user_proxy = autogen.UserProxyAgent(
 Otherwise, reply CONTINUE, or the reason why the task is not solved yet.""",
 )
 
-task = '''
+task = """
 Give me a summary of this article: https://www.eurogamer.net/xbox-announces-long-term-partnership-with-glaad
-'''
+"""
 
-user_proxy.initiate_chat(
-    assistant,
-    message=task
-)
+user_proxy.initiate_chat(assistant, message=task)
