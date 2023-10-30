@@ -1,0 +1,5 @@
+# python anaconda gitignore file
+
+# Environment files
+.env
+
